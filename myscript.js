@@ -7,11 +7,17 @@ do {
     livello = parseInt(prompt("Inserisci il livello di difficoltà da 1 a 3:"));
 } while(livello > 3 || livello <= 0);
 
-if(livello === 1){
-    for(let i = 0; i < 100; i++){
-        let divEl = createMyElement();
-        griglia.append(divEl);
-    }
+// Analizzo i vari livelli
+switch(livello){
+    case 1:
+        console.log("livello 1");
+        break;
+    case 2:
+        console.log("livello 2");
+        break;
+    case 3:
+        console.log("livello 3");
+        break;
 }
 
 // Funzioni
