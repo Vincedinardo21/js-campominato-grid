@@ -11,8 +11,21 @@
     height: 100vh;
 }
 
-.square {
+.square1, .square2, .square3 {
+    border: 1px solid black;
+}
+
+.square1{
     flex-basis: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid black;
+}
+
+.square2{
+    flex-basis: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.square3{
+    flex-basis: calc(100% / 7);
+    height: calc(100% / 7);
 }
