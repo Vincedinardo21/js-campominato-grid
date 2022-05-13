@@ -1,4 +1,5 @@
 let livello;
+let sizeGriglia
 let griglia = document.querySelector(".grid");
 
 // Inserisco il livello di difficoltà
@@ -11,16 +12,25 @@ do {
 switch(livello){
     case 1:
         console.log("livello 1");
+        sizeGriglia = 100;
         break;
     case 2:
         console.log("livello 2");
+        sizeGriglia = 81
         break;
     case 3:
         console.log("livello 3");
+        sizeGriglia = 49;
         break;
 }
 
-// Funzioni
+// Costruisco la griglia
+for(let i = 0; i < sizeGriglia; i++){
+    let divEl = createMyElement();
+    griglia.append(divEl);
+}
+
+// Le mie funzioni
 function createMyElement(){
     let node = document.createElement("div");
     node.className = "square";
